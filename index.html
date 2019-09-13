@@ -17,6 +17,13 @@
           <a href="catalog.html">
             Каталог
           </a>
+          <ul>
+            <li class="catalog-new"><a href="#">Новинки</a></li>
+            <li class="icecream-type"><a href="#">Сливочное</a></li>
+            <li class="icecream-type"><a href="#">Щербеты</a></li>
+            <li class="icecream-type"><a href="#">Фруктовый лед</a></li>
+            <li class="icecream-type"><a href="#">Мелорин</a></li>
+          </ul>
         </li>
         <li class="delivery">
           <a href="delivery.html">
@@ -31,21 +38,44 @@
       </ul>
       <ul class="user-navigation">
         <li class="search-button">
-          <button type="button">
+          <div>
+            <button type="button" class="search-btn">
               <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-            Поиск
-          </button>
+              Поиск
+            </button>
+            <div>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-search"></label>
+                <input type="text" id="user-search" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
         </li>
         <li class="login-button">
-          <button type="button">
+          <div>
+            <button type="button" class="entrance-btn">
               <svg class="entrance-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-            Вход
-          </button>
+              Вход
+            </button>
+            <div>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="user-login"></label>
+                <input type="email" id="user-login" name="login" placeholder="Электронная почта" aria-label="Поле для ввода электронной почты">
+                <label for="user-password"></label>
+                <input type="password" id="user-password" name="password" placeholder="Пароль" aria-label="Поле для ввода пароля">
+                <button class="popup-btn" type="submit">
+                  Войти
+                </button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </div>
+          </div>
         </li>
         <li class="basket-button">
           <button type="button">
-              <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
-            Корзина
+            <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+            Пусто
           </button>
         </li>
       </ul>
@@ -224,8 +254,11 @@
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
         происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="subscription-field"></label>
+          <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта" aria-label="Поле для ввода электронной почты">
+          <button type="submit" class="submit-btn">Отправить</button>
       </p>
-      <!-- форма-->
       <button class="submit" type="button">Отправить</button>
     </section>
     <section>
@@ -256,26 +289,26 @@
       <ul class="socialmedia-list">
         <li class="twitter">
           <a href="#">
-            <img src="img/twitter.svg" alt="Переход на страницу в Twitter" width="32" height="32">
-            Twitter
+            <img src="img/twitter.svg" alt="Глейси в Твиттер" width="32" height="32">
+            Твиттер
           </a>
         </li>
         <li class="insta">
           <a href="#">
-            <img src="img/instagram.svg" alt="Переход на страницу в Instagram" width="32" height="32">
-            Instagram
+            <img src="img/instagram.svg" alt="Глейси в Инстаграм" width="32" height="32">
+            Инстаграм
           </a>
         </li>
         <li class="facebook">
           <a href="#">
-            <img src="img/fb.svg" alt="Переход на страницу в Facebook" width="32" height="32">
-            Facebook
+            <img src="img/fb.svg" alt="Глейси в Фейсбук" width="32" height="32">
+            Фейсбук
           </a>
         </li>
         <li class="vkontakte">
           <a href="#">
-            <img src="img/vk.svg" alt="Переход на страницу в Вконтакте" width="32" height="32">
-            Vkontakte
+            <img src="img/vk.svg" alt="Глейси во Вконтакте" width="32" height="32">
+            Вконтакте
           </a>
         </li>
       </ul>
@@ -310,6 +343,18 @@
       Сделано в <a class="footer-logo" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2019
     </p>
   </footer>
+  <section>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <label for="userfield-id"></label>
+      <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?" aria-label="Поле для ввода имени">
+      <label for="userfield-mail"></label>
+      <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?" aria-label="Поле для ввода электронной почты">
+      <textarea name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
