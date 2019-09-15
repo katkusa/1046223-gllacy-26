@@ -44,8 +44,8 @@
               Поиск
             </button>
             <div>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <label for="user-search"></label>
+              <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
+                <label for="user-search">Поиск по сайту</label>
                 <input type="text" id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </div>
@@ -58,11 +58,11 @@
               Вход
             </button>
             <div>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <label for="user-login"></label>
-                <input type="email" id="user-login" name="login" placeholder="Электронная почта" aria-label="Поле для ввода электронной почты">
-                <label for="user-password"></label>
-                <input type="password" id="user-password" name="password" placeholder="Пароль" aria-label="Поле для ввода пароля">
+              <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
+                <label for="user-login">Электронная почта</label>
+                <input type="email" id="user-login" name="login" placeholder="Электронная почта">
+                <label for="user-password">Пароль</label>
+                <input type="password" id="user-password" name="password" placeholder="Пароль">
                 <button class="popup-btn" type="submit">
                   Войти
                 </button>
@@ -254,12 +254,12 @@
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
         происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="subscription-field"></label>
-          <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта" aria-label="Поле для ввода электронной почты">
-          <button type="submit" class="submit-btn">Отправить</button>
       </p>
-      <button class="submit" type="button">Отправить</button>
+      <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
+        <label for="subscription-field">Электронная почта</label>
+        <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
+        <button type="submit" class="submit-btn">Отправить</button>
+      </form>
     </section>
     <section>
       <h2 class="visually-hidden">Контактная информация</h2>
@@ -277,10 +277,9 @@
           </span>
           (с 10 до 20 ежедневно)
         </p>
-        <button class="user-info">
+        <a class="user-info" href="#">
           Форма обратной связи
-        </button>
-        <!--форма обратной связи-->
+        </a>
       </div>
     </section>
   </main>
@@ -339,18 +338,20 @@
       </ul>
     </div>
     <p class="html-academy">
-      <img class="html-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="108" height="39">
-      Сделано в <a class="footer-logo" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2019
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="html-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="108" height="39">
+      </a>
+      Сделано в <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
     </p>
   </footer>
   <section>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
-      <label for="userfield-id"></label>
-      <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?" aria-label="Поле для ввода имени">
-      <label for="userfield-mail"></label>
-      <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?" aria-label="Поле для ввода электронной почты">
+      <label for="userfield-id">Ваше имя</label>
+      <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
+      <label for="userfield-mail">Электронная почта</label>
+      <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
       <textarea name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
       <button type="submit" class="submit-btn">Отправить</button>
     </form>
