@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог магазина мороженного «Gllacy Shop»</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -136,61 +139,58 @@
         Фильтр товаров
       </h2>
       <form action="https://echo.htmlacademy.ru" method="post" name="item-filter">
+        <p>Сортировка:</p>
+        <select name="sorting">
+          <option value="popular">по популярности</option>
+          <option value="cheap">сначала недорогие</option>
+          <option value="expensive">сначала дорогие</option>
+          <option value="fat">по жирности</option>
+        </select>
+        <label>
+          Цена: 100 руб. – 500 руб.
+          <input type="range" min="100" max="500" name="price-range">
+        </label>
         <fieldset>
-          <p>Сортировка:</p>
-          <select name="sorting">
-            <option value="popular">по популярности</option>
-            <option value="cheap">сначала недорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <label for="range-field">Цена: 100 руб. – 500 руб.</label>
-          <input type="range" min="100" max="500" name="price-range" id="range-field">
-        </fieldset>
-        <fieldset>
-          <label for="fat-field">Жирность:</label>
-          <p>
-            <input type="radio" name="select-fat" id="fat-field" value="0%">
+          Жирность:
+          <label>
+            <input type="radio" name="select-fat" value="0%">
             0%
-          </p>
-          <p>
-            <input type="radio" name="select-fat" id="fat-field" value="до 10%" checked>
+          </label>
+          <label>
+            <input type="radio" name="select-fat" value="до 10%" checked>
             до 10%
-          </p>
-          <p>
-            <input type="radio" name="select-fat" id="fat-field" value="до 30%">
+          </label>
+          <label>
+            <input type="radio" name="select-fat" value="до 30%">
             до 30%
-          </p>
-          <p>
-            <input type="radio" name="select-fat" id="fat-field" value="выше 30%">
+          </label>
+          <label>
+            <input type="radio" name="select-fat" value="выше 30%">
             выше 30%
-          </p>
+          </label>
         </fieldset>
         <fieldset>
-          <label for="consisting-field">Наполнители:</label>
-          <p>
-            <input type="checkbox" name="consisting"  id="consisting-field" value="choko" checked>
+          Наполнители:
+          <label>
+            <input type="checkbox" name="consisting" value="choko" checked>
             шоколадные
-          </p>
-          <p>
-            <input type="checkbox" name="consisting"  id="consisting-field" value="sugar" checked>
+          </label>
+          <label>
+            <input type="checkbox" name="consisting" value="sugar" checked>
             сахарные присыпки
-          </p>
-          <p>
-            <input type="checkbox" name="consisting"  id="consisting-field" value="fruits">
+          </label>
+          <label>
+            <input type="checkbox" name="consisting" value="fruits">
             фрукты
-          </p>
-          <p>
-            <input type="checkbox" name="consisting"  id="consisting-field" value="jam">
+          </label>
+          <label>
+            <input type="checkbox" name="consisting" value="jam">
             джемы
-          </p>
+          </label>
         </fieldset>
-        <fieldset>
-          <label for="submit-field" class="visually-hidden">Применить</label>
-          <input type="submit" name="user-submit" id="submit-field" value="Применить">
-        </fieldset>
+        <button type="submit">
+          Применить
+        </button>
       </form>
     </section>
     <section class="catalog">
