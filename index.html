@@ -20,7 +20,7 @@
           <a href="catalog.html">
             Каталог
           </a>
-          <ul>
+          <ul class="list-navigation">
             <li class="catalog-new"><a href="#">Новинки</a></li>
             <li class="icecream-type"><a href="#">Сливочное</a></li>
             <li class="icecream-type"><a href="#">Щербеты</a></li>
@@ -42,8 +42,8 @@
     </nav>
     <section>
       <ul class="user-navigation">
-        <li class="search-button">
-          <div>
+        <li>
+          <div class="search-block">
             <button type="button" class="search-btn">
               <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
               Поиск
@@ -77,8 +77,8 @@
             </div>
           </div>
         </li>
-        <li class="basket-button">
-          <button type="button">
+        <li>
+          <button type="button" class="basket-button">
             <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
             Пусто
           </button>
@@ -216,7 +216,6 @@
       </ul>
     </section>
     <section class="about-shop">
-      <img src="img/background-aboutshop.jpg" width="1146" height="306" alt="">
       <h2 class="shop-description">
         Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
       </h2>
@@ -244,8 +243,7 @@
       </ul>
     </section>
     <article class="news">
-      <img src="img/background-article.jpg" alt="" width="560" height="220">
-      <h2 news-heading>Новое в нашем блоге</h2>
+      <h2>Новое в нашем блоге</h2>
       <p class="news-article">
         <a href="#">
           10 способов сервировки фруктовых щербетов к столу
@@ -253,18 +251,19 @@
       </p>
     </article>
     <section class="subscription">
-      <img src="img/bg-post.svg" alt="" width="560" height="220">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <p class="subscription-message">
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-        происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-      </p>
-      <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
-        <label for="subscription-field">Электронная почта</label>
-        <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
-        <button type="submit" class="submit-btn">Отправить</button>
-      </form>
+      <div class="subscription-2">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="subscription-message">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+          происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
+          <label for="subscription-field" class="subscription-form">Электронная почта</label>
+          <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
+          <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+      </div>
     </section>
     <section>
       <h2 class="visually-hidden">Контактная информация</h2>
