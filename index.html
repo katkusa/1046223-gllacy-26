@@ -50,7 +50,7 @@
             </button>
             <div>
               <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
-                <label for="user-search">Поиск по сайту</label>
+                <label for="user-search"><span class="visually-hidden">Поиск по сайту</span></label>
                 <input type="text" id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </div>
@@ -64,9 +64,13 @@
             </button>
             <div>
               <form action="https://echo.htmlacademy.ru" method="post" name="user-page">
-                <label for="user-login">Электронная почта</label>
+                <label for="user-login">
+                  <span class="visually-hidden">Электронная почта</span>
+                </label>
                 <input type="email" id="user-login" name="login" placeholder="Электронная почта">
-                <label for="user-password">Пароль</label>
+                <label for="user-password">
+                  <span class="visually-hidden">Пароль</span>
+                </label>
                 <input type="password" id="user-password" name="password" placeholder="Пароль">
                 <button class="popup-btn" type="submit">
                   Войти
@@ -243,7 +247,7 @@
       </ul>
     </section>
     <article class="news">
-      <h2>Новое в нашем блоге</h2>
+      <h2 class="news-title">Новое в нашем блоге</h2>
       <p class="news-article">
         <a href="#">
           10 способов сервировки фруктовых щербетов к столу
@@ -259,7 +263,7 @@
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
-          <label for="subscription-field" class="subscription-form">Электронная почта</label>
+          <label for="subscription-field"><span class="visually-hidden">Электронная почта</span></label>
           <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
           <button type="submit" class="submit-btn">Отправить</button>
         </form>
@@ -293,25 +297,25 @@
         <li class="twitter">
           <a href="#">
             <img src="img/twitter.svg" alt="Глейси в Твиттер" width="32" height="32">
-            Твиттер
+            <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li class="insta">
           <a href="#">
             <img src="img/instagram.svg" alt="Глейси в Инстаграм" width="32" height="32">
-            Инстаграм
+            <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li class="facebook">
           <a href="#">
             <img src="img/fb.svg" alt="Глейси в Фейсбук" width="32" height="32">
-            Фейсбук
+            <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="vkontakte">
           <a href="#">
             <img src="img/vk.svg" alt="Глейси во Вконтакте" width="32" height="32">
-            Вконтакте
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
       </ul>
@@ -352,9 +356,9 @@
     <form action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
-      <label for="userfield-id">Ваше имя</label>
+      <label for="userfield-id"><span class="visually-hidden">Ваше имя</span></label>
       <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
-      <label for="userfield-mail">Электронная почта</label>
+      <label for="userfield-mail"><span class="visually-hidden">Электронная почта</span></label>
       <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
       <textarea name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
       <button type="submit" class="submit-btn">Отправить</button>
