@@ -40,8 +40,8 @@
               Поиск
             </button>
             <div>
-              <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
-                <label for="user-search"><span class="visually-hidden">Поиск по сайту</span></label>
+              <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
+                <label for="user-search" class="visually-hidden">Поиск по сайту</label>
                 <input type="text" id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </div>
@@ -55,20 +55,16 @@
               </button>
               <div>
                 <form action="https://echo.htmlacademy.ru" method="post" name="user-page">
-                  <label for="user-login">
-                    <span class="visually-hidden">Электронная почта</span>
-                  </label>
+                  <label for="user-login" class="visually-hidden">Электронная почта</label>
                   <input type="email" id="user-login" name="login" placeholder="Электронная почта">
-                  <label for="user-password">
-                    <span class="visually-hidden">Пароль</span>
-                  </label>
+                  <label for="user-password" class="visually-hidden">Пароль</label>
                   <input type="password" id="user-password" name="password" placeholder="Пароль">
                   <button class="popup-btn" type="submit">
                     Войти
                   </button>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
                 </form>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
               </div>
             </div>
         </li>
@@ -406,19 +402,19 @@
         </li>
       </ul>
       <ul class="paginator">
-        <li class="page-1">
+        <li class="page-item active">
           <a href="#">1</a>
         </li>
-        <li class="page-2">
+        <li class="page-item">
           <a href="#">2</a>
         </li>
-        <li class="page-3">
+        <li class="page-item">
           <a href="#">3</a>
         </li>
-        <li class="page-4">
+        <li class="page-item">
           <a href="#">4</a>
         </li>
-        <li class="page-5">
+        <li class="page-item">
           <a href="#">5</a>
         </li>
       </ul>

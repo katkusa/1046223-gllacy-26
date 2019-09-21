@@ -12,7 +12,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="logo" href="index.html">
+      <a class="logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «Gllacy Shop»">
       </a>
       <ul class="site-navigation">
@@ -49,8 +49,8 @@
               Поиск
             </button>
             <div>
-              <form action="https://echo.htmlacademy.ru" method="post" name="http://htmlbook.ru/html/form/name">
-                <label for="user-search"><span class="visually-hidden">Поиск по сайту</span></label>
+              <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
+                <label for="user-search" class="visually-hidden">Поиск по сайту</label>
                 <input type="text" id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </div>
@@ -64,20 +64,16 @@
             </button>
             <div>
               <form action="https://echo.htmlacademy.ru" method="post" name="user-page">
-                <label for="user-login">
-                  <span class="visually-hidden">Электронная почта</span>
-                </label>
+                <label for="user-login" class="visually-hidden">Электронная почта</label>
                 <input type="email" id="user-login" name="login" placeholder="Электронная почта">
-                <label for="user-password">
-                  <span class="visually-hidden">Пароль</span>
-                </label>
+                <label for="user-password" class="visually-hidden">Пароль</label>
                 <input type="password" id="user-password" name="password" placeholder="Пароль">
                 <button class="popup-btn" type="submit">
                   Войти
                 </button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
               </form>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
             </div>
           </div>
         </li>
@@ -130,7 +126,6 @@
     </section>
     <section class="sale-1">
       <h2 sale-heading>
-        <img src="img/background_berry.jpg" alt="" width="560" height="229">
         Малинка даром!
       </h2>
       <p class="sale-paragraph">
@@ -141,7 +136,6 @@
       </a>
     </section>
     <section class="sale-2">
-      <img src="img/background_choko.jpg" alt="" width="560" height="229">
       <h2 sale-heading>
         Шоколадки даром!
       </h2>
@@ -263,7 +257,7 @@
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
-          <label for="subscription-field"><span class="visually-hidden">Электронная почта</span></label>
+          <label for="subscription-field" class="visually-hidden">Электронная почта</label>
           <input type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
           <button type="submit" class="submit-btn">Отправить</button>
         </form>
@@ -356,9 +350,9 @@
     <form action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
-      <label for="userfield-id"><span class="visually-hidden">Ваше имя</span></label>
+      <label for="userfield-id" class="visually-hidden">Ваше имя</label>
       <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
-      <label for="userfield-mail"><span class="visually-hidden">Электронная почта</span></label>
+      <label for="userfield-mail" class="visually-hidden">Электронная почта</label>
       <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
       <textarea name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
       <button type="submit" class="submit-btn">Отправить</button>
