@@ -53,7 +53,7 @@
                 <svg class="entrance-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                 Вход
               </button>
-              <div>
+              <div class="user-form">
                 <form action="https://echo.htmlacademy.ru" method="post" name="user-page">
                   <label for="user-login" class="visually-hidden">Электронная почта</label>
                   <input type="email" id="user-login" name="login" placeholder="Электронная почта">
@@ -138,7 +138,7 @@
       <h2 class="visually-hidden">
         Фильтр товаров
       </h2>
-      <form action="https://echo.htmlacademy.ru" method="post" name="item-filter">
+      <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="option-form">
         <p>Сортировка:</p>
         <select name="sorting">
           <option value="popular">по популярности</option>
@@ -146,49 +146,53 @@
           <option value="expensive">сначала дорогие</option>
           <option value="fat">по жирности</option>
         </select>
-        <label>
+        <label class="price-option">
           Цена: 100 руб. – 500 руб.
-          <input type="range" min="100" max="500" name="price-range">
+          <input type="range" min="100" max="500" name="price-range" class="price-range">
         </label>
         <fieldset>
           Жирность:
-          <label>
-            <input type="radio" name="select-fat" value="0%">
-            0%
-          </label>
-          <label>
-            <input type="radio" name="select-fat" value="до 10%" checked>
-            до 10%
-          </label>
-          <label>
-            <input type="radio" name="select-fat" value="до 30%">
-            до 30%
-          </label>
-          <label>
-            <input type="radio" name="select-fat" value="выше 30%">
-            выше 30%
-          </label>
+          <div class="fat-field">
+            <label>
+              <input type="radio" name="select-fat" value="0%">
+              0%
+            </label>
+            <label>
+              <input type="radio" name="select-fat" value="до 10%" checked>
+              до 10%
+            </label>
+            <label>
+              <input type="radio" name="select-fat" value="до 30%">
+              до 30%
+            </label>
+            <label>
+              <input type="radio" name="select-fat" value="выше 30%">
+              выше 30%
+            </label>
+          </div>
         </fieldset>
         <fieldset>
           Наполнители:
-          <label>
-            <input type="checkbox" name="consisting" value="choko" checked>
-            шоколадные
-          </label>
-          <label>
-            <input type="checkbox" name="consisting" value="sugar" checked>
-            сахарные присыпки
-          </label>
-          <label>
-            <input type="checkbox" name="consisting" value="fruits">
-            фрукты
-          </label>
-          <label>
-            <input type="checkbox" name="consisting" value="jam">
-            джемы
-          </label>
+          <div class="consist-field">
+            <label>
+              <input type="checkbox" name="consisting" value="choko" checked>
+              шоколадные
+            </label>
+            <label>
+              <input type="checkbox" name="consisting" value="sugar" checked>
+              сахарные присыпки
+            </label>
+            <label>
+              <input type="checkbox" name="consisting" value="fruits">
+              фрукты
+            </label>
+            <label>
+              <input type="checkbox" name="consisting" value="jam">
+              джемы
+            </label>
+          </div>
         </fieldset>
-        <button type="submit">
+        <button type="submit" class="sorting-btn">
           Применить
         </button>
       </form>
