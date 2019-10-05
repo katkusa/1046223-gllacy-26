@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
   <div class="wrapper">
     <header>
       <div class="main-header">
@@ -101,26 +105,34 @@
       <h1 class="visually-hidden">
         Магазин мороженного «Gllacy Shop»
       </h1>
-      <section class="icecream-slide">
+      <section class="slider">
         <h2 class="visually-hidden">Слайды с мороженным</h2>
-        <ul class="slide-list">
-          <li class="slide-item">
-            <img src="img/double_icecream_1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
-            Крем-брюле и пломбир с малиновым джемом
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+            <h3 class="slide-title">
+              Крем-брюле и пломбир с малиновым джемом
+            </h3>
             <a class="give-link" href="#">
               Давайте оба!
             </a>
           </li>
-          <li class="slide-item">
-            <img src="img/double_icecream_2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
-            Шоколадный пломбир и лимонный сорбет
+          <li class="slider-item slide" id="slide2">
+            <h3 class="slide-title">
+              Шоколадный пломбир и лимонный сорбет
+            </h3>
             <a class="give-link" href="#">
               Давайте оба!
             </a>
           </li>
-          <li class="slide-item">
-            <img src="img/double_icecream_3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
-            Пломбир с помадкой и клубничный щербет
+          <li class="slider-item slide" id="slide3">
+            <h3 class="slide-title">
+              Пломбир с помадкой и клубничный щербет
+            </h3>
             <a class="give-link" href="#">
               Давайте оба!
             </a>
@@ -360,6 +372,7 @@
         </div>
       </div>
     </footer>
+  </div>
   <!--
   <section>
     <form action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
