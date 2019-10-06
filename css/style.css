@@ -19,25 +19,25 @@ button {
   margin-right: auto;
   margin-left: auto;
 }
-.catalog-wrapper {
+.background-wrapper {
   background-color: #849d8f;
 }
-.site-wrapper {
+.background-wrapper-with-image {
   background-color: #849d8f;
   background-image: url("../img/double_icecream_1.png");
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
-.site-wrapper::before,
-.site-wrapper::after {
+.background-wrapper-with-image::before,
+.background-wrapper-with-image::after {
   content: "";
   visibility: hidden;
 }
-.site-wrapper::before {
+.background-wrapper-with-image::before {
   background-image: url("../img/double_icecream_2.png");
 }
-.site-wrapper::after {
+.background-wrapper-with-image::after {
   background-image: url("../img/double_icecream_3.png");
 }
 .site-navigation,
@@ -292,7 +292,7 @@ button {
   margin-bottom: 27px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .slider-controls {
   position: absolute;
@@ -301,7 +301,7 @@ button {
   z-index: 20;
   font-size: 0;
 }
-.slider-controls label {
+.slider-controls .slider-control {
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -312,28 +312,31 @@ button {
   border-radius: 50%;
   cursor: pointer;
 }
-#product-1:checked ~ .site-wrapper {
+.slider-control:last-child {
+  margin-right: 0;
+}
+#product-1:checked ~ .background-wrapper-with-image {
   background-color: #849d8f;
   background-image: url("../img/double_icecream_1.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+#product-2:checked ~ .background-wrapper-with-image {
   background-color: #8996a6;
   background-image: url("../img/double_icecream_2.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+#product-3:checked ~ .background-wrapper-with-image {
   background-color: #9d8b84;
   background-image: url("../img/double_icecream_3.png");
 }
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+#product-1:checked ~ .background-wrapper-with-image #slide1,
+#product-2:checked ~ .background-wrapper-with-image #slide2,
+#product-3:checked ~ .background-wrapper-with-image #slide3 {
   display: block;
 }
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-1:checked ~ .background-wrapper-with-image label[for="product-1"],
+#product-2:checked ~ .background-wrapper-with-image label[for="product-2"],
+#product-3:checked ~ .background-wrapper-with-image label[for="product-3"] {
   background-color: #ffffff;
 }
 .give-link {
@@ -672,6 +675,7 @@ button {
   line-height: 18px;
 }
 .information-list {
+  position: relative;
   min-width: 145px;
   margin: 0;
   margin-bottom: 5px;
@@ -679,6 +683,8 @@ button {
   display: flex;
 }
 .heart::before {
+  position: absolute;
+  right: 145px;
   width: 15px;
   height: 13px;
   flex-shrink: 0;
@@ -801,11 +807,6 @@ button {
   min-width: 703px;
   min-height: 37px;
 }
-.sorting-btn {
-  padding: 8px 28px;
-  margin-top: 25px;
-  border: 2px solid #ffffff;
-}
 .option-form {
   font-size: 14px;
   font-weight: 500;
@@ -822,13 +823,14 @@ button {
   line-height: 18px;
   color: #ffffff;
 
-  border: none;
-  border-radius: 20px;
+  border: transparent;
+  border-radius: 50px;
   background-color: rgba(255,255,255, 0.2)
 }
 .option-form select:hover,
 .option-form select:focus {
   color: #323232;
+  background-color: #ffffff;
 }
 .option-form select:active {
   font-size: 14px;
@@ -836,17 +838,21 @@ button {
   line-height: 16px;
   color: #323232;
 }
+.sorting-btn {
+  padding: 8px 28px;
+  margin-top: 25px;
+  border: 2px solid #ffffff;
+}
 .sorting-btn:hover,
 .sorting-btn:focus {
   color: #323232;
-
-  border: none;
+  border: 2px solid #ffffff;
   border-radius: 20px;
   background-color: #ffffff;
 }
 .sorting-btn:active {
   color: #323232;
-  border: none;
+  border: transparent;
   border-radius: 20px;
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
