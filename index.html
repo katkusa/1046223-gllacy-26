@@ -26,13 +26,13 @@
               <a href="catalog.html">
                 Каталог
               </a>
-         <!-- <ul class="list-navigation">
+              <ul class="list-navigation">
                 <li class="catalog-new"><a href="#">Новинки</a></li>
                 <li class="icecream-type"><a href="#">Сливочное</a></li>
                 <li class="icecream-type"><a href="#">Щербеты</a></li>
                 <li class="icecream-type"><a href="#">Фруктовый лед</a></li>
                 <li class="icecream-type"><a href="#">Мелорин</a></li>
-              </ul>-->
+              </ul>
             </li>
             <li class="delivery">
               <a href="delivery.html">
@@ -53,12 +53,12 @@
                 <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
                 Поиск
               </button>
-         <!--<div>
+              <div class="search-form">
                 <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
                   <label for="user-search" class="visually-hidden">Поиск по сайту</label>
                   <input type="text" id="user-search" name="search" placeholder="Что ищем?">
                 </form>
-              </div>-->
+              </div>
             </div>
           </li>
           <li>
@@ -67,19 +67,25 @@
                 <svg class="entrance-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                 Вход
               </button>
-          <!--<div class="user-form">
+              <div class="user-form">
                 <form action="https://echo.htmlacademy.ru" method="post" name="user-page">
                   <label for="user-login" class="visually-hidden">Электронная почта</label>
                   <input type="email" id="user-login" name="login" placeholder="Электронная почта">
                   <label for="user-password" class="visually-hidden">Пароль</label>
                   <input type="password" id="user-password" name="password" placeholder="Пароль">
-                  <button class="popup-btn" type="submit">
-                    Войти
-                  </button>
                 </form>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>-->
+                <div class="user-form-block">
+                  <div class="popup-block">
+                    <button class="popup-btn" type="submit">
+                      Войти
+                    </button>
+                  </div>
+                  <div class="user-help-conteiner popup-block">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
           <li>
@@ -289,7 +295,7 @@
         <img class="pin" src="img/pin.svg" alt="" width="80" height="140">
         <div class="contacts">
           <div class="contact-info-map">
-            Адрес главного офиса  и офлайн-магазина:
+            Адрес главного офиса<br> и офлайн-магазина:
             <span class="address">ул. Большая Конюшенная  19/8, Санкт-Петербург</span>
             Для заказов по телефону:
             <span class="tel-number">
@@ -373,19 +379,23 @@
       </div>
     </footer>
   </div>
-  <!--
-  <section>
+  <section class="modal">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p>Мы обязательно вам ответим!</p>
     <form action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p>Мы обязательно вам ответим!</p>
       <label for="userfield-id" class="visually-hidden">Ваше имя</label>
       <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
       <label for="userfield-mail" class="visually-hidden">Электронная почта</label>
       <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
       <textarea name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
-      <button type="submit" class="submit-btn">Отправить</button>
     </form>
-  </section>-->
+    <div class="button-conteiner">
+      <button type="submit" class="submit-btn">Отправить</button>
+    </div>
+  </section>
 </body>
 
 </html>
