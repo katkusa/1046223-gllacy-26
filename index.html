@@ -23,7 +23,7 @@
           </a>
           <ul class="site-navigation">
             <li class="catalog-nav">
-              <a href="catalog.html">
+              <a href="catalog.html" class="menu-link">
                 Каталог
               </a>
               <ul class="list-navigation">
@@ -35,12 +35,12 @@
               </ul>
             </li>
             <li class="delivery">
-              <a href="delivery.html">
+              <a href="delivery.html" class="menu-link">
                 Доставка и оплата
               </a>
             </li>
             <li class="info">
-              <a href="info.html">
+              <a href="info.html" class="menu-link">
                 О Компании
               </a>
             </li>
@@ -56,7 +56,7 @@
               <div class="search-form">
                 <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
                   <label for="user-search" class="visually-hidden">Поиск по сайту</label>
-                  <input type="text" id="user-search" name="search" placeholder="Что ищем?">
+                  <input class="input-area" type="text" id="user-search" name="search" placeholder="Что ищем?">
                 </form>
               </div>
             </div>
@@ -70,19 +70,19 @@
               <div class="user-form">
                 <form action="https://echo.htmlacademy.ru" method="post" name="user-page">
                   <label for="user-login" class="visually-hidden">Электронная почта</label>
-                  <input type="email" id="user-login" name="login" placeholder="Электронная почта">
+                  <input class="input-area" type="email" id="user-login" name="login" placeholder="Электронная почта">
                   <label for="user-password" class="visually-hidden">Пароль</label>
-                  <input type="password" id="user-password" name="password" placeholder="Пароль">
+                  <input class="input-area" type="password" id="user-password" name="password" placeholder="Пароль">
                 </form>
                 <div class="user-form-block">
                   <div class="popup-block">
-                    <button class="popup-btn" type="submit">
+                    <button class="popup-btn red-button" type="submit">
                       Войти
                     </button>
                   </div>
-                  <div class="user-help-conteiner popup-block">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                  <div class="user-help-container popup-block">
+                    <a href="#" class="black-link">Забыли пароль?</a>
+                    <a href="#" class="black-link">Новая регистрация</a>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@
             <h3 class="slide-title">
               Крем-брюле и пломбир с малиновым джемом
             </h3>
-            <a class="give-link" href="#">
+            <a class="give-link red-button" href="#">
               Давайте оба!
             </a>
           </li>
@@ -131,7 +131,7 @@
             <h3 class="slide-title">
               Шоколадный пломбир и лимонный сорбет
             </h3>
-            <a class="give-link" href="#">
+            <a class="give-link red-button" href="#">
               Давайте оба!
             </a>
           </li>
@@ -139,7 +139,7 @@
             <h3 class="slide-title">
               Пломбир с помадкой и клубничный щербет
             </h3>
-            <a class="give-link" href="#">
+            <a class="give-link red-button" href="#">
               Давайте оба!
             </a>
           </li>
@@ -153,7 +153,7 @@
           <p class="sale-paragraph">
           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
-          <a class="sale-btn" href="#">
+          <a class="sale-btn red-button-sale" href="#">
             Хочу варенье!
           </a>
         </section>
@@ -164,7 +164,7 @@
           <p class="sale-paragraph">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a class="sale-btn" href="#">
+          <a class="sale-btn red-button-sale" href="#">
             Хочу шоколадки!
           </a>
         </section>
@@ -183,7 +183,7 @@
               310₽<span class="icecream-kg">/кг</span>
             </p>
             <h3 class="icecream-name">
-              <a href="#">
+              <a href="#" class="white-link">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </h3>
@@ -197,7 +197,7 @@
               380₽<span class="icecream-kg">/кг</span>
             </p>
             <h3 class="icecream-name">
-              <a href="#">
+              <a href="#" class="white-link">
                 Сливочно-кофейное с кусочками шоколада
               </a>
             </h3>
@@ -211,7 +211,7 @@
               355₽<span class="icecream-kg">/кг</span>
             </p>
             <h3 class="icecream-name">
-              <a href="#">
+              <a href="#" class="white-link">
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
             </h3>
@@ -225,7 +225,7 @@
               415₽<span class="icecream-kg">/кг</span>
             </p>
             <h3 class="icecream-name">
-              <a href="#">
+              <a href="#" class="white-link">
                 Сливочное крем-брюле с карамельной подливкой
               </a>
             </h3>
@@ -267,7 +267,7 @@
         <article class="news block-news-sub">
           <h2 class="news-title">Новое в нашем блоге</h2>
           <p class="news-article">
-            <a href="#">
+            <a href="#" class="black-link">
             10 способов сервировки фруктовых щербетов к столу
             </a>
           </p>
@@ -282,8 +282,8 @@
             </p>
             <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
               <label for="subscription-field" class="visually-hidden">Электронная почта</label>
-              <input type="email" name="subscription-form" id="subscription-field" class="email-form" placeholder="Электронная почта">
-              <button type="submit" class="submit-btn">Отправить</button>
+              <input class="input-area" type="email" name="subscription-form" id="subscription-field" class="email-form" placeholder="Электронная почта">
+              <button type="submit" class="submit-btn red-button">Отправить</button>
             </form>
           </div>
         </section>
@@ -305,7 +305,7 @@
             </span>
             (с 10 до 20 ежедневно)
           </div>
-          <a class="user-info" href="#">
+          <a class="user-info red-button" href="#">
             Форма обратной связи
           </a>
         </div>
@@ -316,27 +316,23 @@
         <div class="container-footer">
           <div class="social-media">
             <ul class="socialmedia-list">
-              <li class="twitter">
+              <li class="socialmedia-icon socialmedia-opacity twitter">
                 <a href="#">
-                  <img src="img/twitter.svg" alt="Глейси в Твиттер" width="32" height="32">
                   <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>
-              <li class="insta">
+              <li class="socialmedia-icon socialmedia-opacity insta">
                 <a href="#">
-                  <img src="img/instagram.svg" alt="Глейси в Инстаграм" width="32" height="32">
                   <span class="visually-hidden">Инстаграм</span>
                 </a>
               </li>
-              <li class="facebook">
+              <li class="socialmedia-icon socialmedia-opacity facebook">
                 <a href="#">
-                  <img src="img/fb.svg" alt="Глейси в Фейсбук" width="32" height="32">
                   <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
-              <li class="vkontakte">
+              <li class="socialmedia-icon socialmedia-opacity vkontakte">
                 <a href="#">
-                  <img src="img/vk.svg" alt="Глейси во Вконтакте" width="32" height="32">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
@@ -345,22 +341,22 @@
           <div class="clients-information">
             <ul class="information-item">
               <li class="information-list heart">
-                <a href="#">
+                <a href="#" class="white-link">
                   Для поставщиков
                 </a>
               </li>
               <li class="information-list">
-                <a href="#">
+                <a href="#" class="white-link">
                   Наши документы
                 </a>
               </li>
               <li class="information-list">
-                <a href="#">
+                <a href="#" class="white-link">
                   О производстве
                 </a>
               </li>
               <li class="information-list">
-                <a href="#">
+                <a href="#" class="white-link">
                   Экологические стандарты
                 </a>
               </li>
@@ -371,7 +367,7 @@
               <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img class="html-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="108" height="39">
               </a>
-              <p>Сделано в <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
+              <p>Сделано в <a class="footer-logo white-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
               </p>
             </div>
           </div>
@@ -387,13 +383,13 @@
     <p>Мы обязательно вам ответим!</p>
     <form action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
       <label for="userfield-id" class="visually-hidden">Ваше имя</label>
-      <input type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
+      <input class="input-area" type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
       <label for="userfield-mail" class="visually-hidden">Электронная почта</label>
-      <input type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
-      <textarea name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
+      <input class="input-area" type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
+      <textarea class="input-area" name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
     </form>
-    <div class="button-conteiner">
-      <button type="submit" class="submit-btn">Отправить</button>
+    <div class="button-container">
+      <button type="submit" class="submit-btn red-button">Отправить</button>
     </div>
   </section>
 </body>
