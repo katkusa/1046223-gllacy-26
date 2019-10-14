@@ -10,7 +10,7 @@
 <body>
   <div class="background-wrapper">
   <div class="wrapper">
-    <header>
+    <header class="catalog-header">
     <div class="main-header">
       <nav class="main-navigation">
         <a class="logo" href="index.html">
@@ -148,13 +148,14 @@
         </h2>
         <form action="https://echo.htmlacademy.ru" method="post" name="item-filter" class="option-form">
           <div class="sorting-block">
-          <p class="form-title">Сортировка:</p>
-          <select name="sorting" class="sorting form-background">
-            <option value="popular">по популярности</option>
-            <option value="cheap">сначала недорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
+            <p class="form-title">Сортировка:</p>
+            <select name="sorting" class="sorting form-background">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+            <div class="arrow"></div>
           </div>
           <div class="filter-range">
             <div class="form-title">Цена: 100 руб. – 500 руб.</div>
@@ -172,22 +173,22 @@
             <div class="fat-field form-background">
               <label>
                 <input type="radio" name="select-fat" value="0%" class="visually-hidden input-radio">
-                <span class="radio-indicator first-radio"></span>
+                <span class="radio-indicator"></span>
                 0%
               </label>
               <label>
                 <input type="radio" name="select-fat" value="до 10%" class="visually-hidden input-radio" checked>
-                <span class="radio-indicator second-radio"></span>
+                <span class="radio-indicator"></span>
                 до 10%
               </label>
               <label>
                 <input type="radio" name="select-fat" value="до 30%" class="visually-hidden input-radio">
-                <span class="radio-indicator third-radio"></span>
+                <span class="radio-indicator"></span>
                 до 30%
               </label>
               <label>
                 <input type="radio" name="select-fat" value="выше 30%" class="visually-hidden input-radio">
-                <span class="radio-indicator fourth-radio"></span>
+                <span class="radio-indicator"></span>
                 выше 30%
               </label>
             </div>
@@ -199,27 +200,27 @@
             <div class="consist-field form-background">
               <label>
                 <input type="checkbox" name="consisting" value="choko" class="visually-hidden input-checkbox" checked>
-                <span class="checkbox-indicator first-checkbox"></span>
+                <span class="checkbox-indicator"></span>
                 шоколадные
               </label>
               <label>
                 <input type="checkbox" name="consisting" value="sugar" class="visually-hidden input-checkbox" checked>
-                <span class="checkbox-indicator second-checkbox"></span>
+                <span class="checkbox-indicator"></span>
                 сахарные присыпки
               </label>
               <label>
                 <input type="checkbox" name="consisting" value="fruits" class="visually-hidden input-checkbox">
-                <span class="checkbox-indicator third-checkbox"></span>
+                <span class="checkbox-indicator"></span>
                 фрукты
               </label>
               <label>
                 <input type="checkbox" name="consisting" value="syrup" class="visually-hidden input-checkbox">
-                <span class="checkbox-indicator fourth-checkbox"></span>
+                <span class="checkbox-indicator"></span>
                 сиропы
               </label>
               <label>
                 <input type="checkbox" name="consisting" value="jam" class="visually-hidden input-checkbox">
-                <span class="checkbox-indicator fifth-checkbox"></span>
+                <span class="checkbox-indicator"></span>
                 джемы
               </label>
             </div>
@@ -495,23 +496,23 @@
       <div class="container-footer">
         <div class="social-media">
           <ul class="socialmedia-list">
-            <li class="socialmedia-icon socialmedia-opacity twitter">
-              <a href="#">
+            <li>
+              <a href="#" class="socialmedia-icon twitter">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
-            <li class="socialmedia-icon socialmedia-opacity insta">
-              <a href="#">
+            <li>
+              <a href="#" class="socialmedia-icon insta">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
-            <li class="socialmedia-icon socialmedia-opacity facebook">
-              <a href="#">
+            <li>
+              <a href="#" class="socialmedia-icon facebook">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="socialmedia-icon socialmedia-opacity vkontakte">
-              <a href="#">
+            <li>
+              <a href="#"  class="socialmedia-icon vkontakte">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
