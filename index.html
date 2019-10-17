@@ -109,7 +109,9 @@
         </div>
       </div>
     </header>
-    <main>
+  </div>
+  <main>
+    <div class="wrapper">
       <h1 class="visually-hidden">
         Магазин мороженного «Gllacy Shop»
       </h1>
@@ -176,7 +178,7 @@
           Список сортов мороженного
         </h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-hit">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -190,7 +192,7 @@
               </a>
             </h3>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-hit">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/coffee.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
@@ -204,7 +206,7 @@
               </a>
             </h3>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-hit">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
@@ -218,7 +220,7 @@
               </a>
             </h3>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-hit">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/cream.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
@@ -284,99 +286,98 @@
             </p>
             <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
               <label for="subscription-field" class="visually-hidden">Электронная почта</label>
-              <input class="input-area" type="email" name="subscription-form" id="subscription-field" class="email-form" placeholder="Электронная почта">
+              <input class="input-area email-form" type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
               <button type="submit" class="submit-btn red-button">Отправить</button>
             </form>
           </div>
         </section>
       </div>
-  </div>
-      <section class="contact-block">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <img class="map" src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <img class="pin" src="img/pin.svg" alt="" width="80" height="140">
-        <div class="contacts">
-          <div class="contact-info-map">
-            Адрес главного офиса<br> и офлайн-магазина:
-            <span class="address">ул. Большая Конюшенная  19/8, Санкт-Петербург</span>
-            Для заказов по телефону:
-            <span class="tel-number">
-              <a href="tel:88124502525">
-                8 812 450-25-25
-              </a>
-            </span>
-            (с 10 до 20 ежедневно)
-          </div>
-          <a class="user-info red-button" href="#">
-            Форма обратной связи
-          </a>
+    </div>
+    <section class="contact-block">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <img class="map" src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+      <img class="pin" src="img/pin.svg" alt="" width="80" height="140">
+      <div class="contacts">
+        <div class="contact-info-map">
+          Адрес главного офиса<br> и офлайн-магазина:
+          <span class="address">ул. Большая Конюшенная  19/8, Санкт-Петербург</span>
+          Для заказов по телефону:
+          <span class="tel-number">
+            <a href="tel:88124502525">
+              8 812 450-25-25
+            </a>
+          </span>
+          (с 10 до 20 ежедневно)
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="wrapper">
-        <div class="container-footer">
-          <div class="social-media">
-            <ul class="socialmedia-list">
-              <li>
-                <a href="#" class="socialmedia-icon twitter">
-                  <span class="visually-hidden">Твиттер</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="socialmedia-icon insta">
-                  <span class="visually-hidden">Инстаграм</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="socialmedia-icon facebook">
-                  <span class="visually-hidden">Фейсбук</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="socialmedia-icon vkontakte">
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="clients-information">
-            <ul class="information-item">
-              <li class="information-list heart">
-                <a href="#" class="white-link">
-                  Для поставщиков
-                </a>
-              </li>
-              <li class="information-list">
-                <a href="#" class="white-link">
-                  Наши документы
-                </a>
-              </li>
-              <li class="information-list">
-                <a href="#" class="white-link">
-                  О производстве
-                </a>
-              </li>
-              <li class="information-list">
-                <a href="#" class="white-link">
-                  Экологические стандарты
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="copyright">
-            <div class="html-academy">
-              <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="html-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="108" height="39">
+        <a class="user-info red-button" href="#">
+          Форма обратной связи
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrapper">
+      <div class="container-footer">
+        <div class="social-media">
+          <ul class="socialmedia-list">
+            <li>
+              <a href="#" class="socialmedia-icon twitter">
+                <span class="visually-hidden">Твиттер</span>
               </a>
-              <p>Сделано в <a class="footer-logo white-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
-              </p>
-            </div>
+            </li>
+            <li>
+              <a href="#" class="socialmedia-icon insta">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialmedia-icon facebook">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialmedia-icon vkontakte">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="clients-information">
+          <ul class="information-item">
+            <li class="information-list heart">
+              <a href="#" class="white-link">
+                Для поставщиков
+              </a>
+            </li>
+            <li class="information-list">
+              <a href="#" class="white-link">
+                Наши документы
+              </a>
+            </li>
+            <li class="information-list">
+              <a href="#" class="white-link">
+                О производстве
+              </a>
+            </li>
+            <li class="information-list">
+              <a href="#" class="white-link">
+                Экологические стандарты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <div class="html-academy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img class="html-logo" src="img/logo-htmlacademy.svg" alt="Логотип HTML Академии" width="108" height="39">
+            </a>
+            <p>Сделано в <a class="footer-logo white-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
   <section class="modal">
     <button class="modal-close" type="button">
       <span class="visually-hidden">Закрыть</span>
@@ -394,6 +395,7 @@
       <button type="submit" class="submit-btn red-button">Отправить</button>
     </div>
   </section>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
