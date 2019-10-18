@@ -28,7 +28,7 @@
               </a>
               <ul class="list-navigation">
                 <li class="catalog-new"><a href="#">Новинки</a></li>
-                <li class="icecream-type"><a href="#">Сливочное</a></li>
+                <li class="icecream-type"><a href="catalog.html">Сливочное</a></li>
                 <li class="icecream-type"><a href="#">Щербеты</a></li>
                 <li class="icecream-type"><a href="#">Фруктовый лед</a></li>
                 <li class="icecream-type"><a href="#">Мелорин</a></li>
@@ -177,8 +177,8 @@
         <h2 class="visually-hidden">
           Список сортов мороженного
         </h2>
-        <ul class="catalog-list catalog-list-hit">
-          <li class="catalog-item catalog-item-hit">
+        <ul class="catalog-list">
+          <li class="catalog-item action">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -191,8 +191,13 @@
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </h3>
+            <div class="actions">
+              <a class="show-button red-button" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </li>
-          <li class="catalog-item catalog-item-hit">
+          <li class="catalog-item action">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/coffee.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
@@ -205,8 +210,13 @@
                 Сливочно-кофейное с кусочками шоколада
               </a>
             </h3>
+            <div class="actions">
+              <a class="show-button red-button" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </li>
-          <li class="catalog-item catalog-item-hit">
+          <li class="catalog-item action">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
@@ -219,8 +229,13 @@
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
             </h3>
+            <div class="actions">
+              <a class="show-button red-button" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </li>
-          <li class="catalog-item catalog-item-hit">
+          <li class="catalog-item action">
             <p class="icecream-img hit">
               <a href="#"></a>
               <img src="img/cream.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
@@ -233,6 +248,11 @@
                 Сливочное крем-брюле с карамельной подливкой
               </a>
             </h3>
+            <div class="actions">
+              <a class="show-button red-button" href="#">
+                Быстрый просмотр
+              </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -287,7 +307,7 @@
             <form action="https://echo.htmlacademy.ru" method="post" name="user-subscription">
               <label for="subscription-field" class="visually-hidden">Электронная почта</label>
               <input class="input-area email-form" type="email" name="subscription-form" id="subscription-field" placeholder="Электронная почта">
-              <button type="submit" class="submit-btn red-button">Отправить</button>
+              <button type="submit" class="subscription-btn red-button">Отправить</button>
             </form>
           </div>
         </section>
@@ -295,8 +315,11 @@
     </div>
     <section class="contact-block">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <img class="map" src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
-      <img class="pin" src="img/pin.svg" alt="" width="80" height="140">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1712.0566339341992!2d30.32383543228358!3d59.93859171300498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571417828946!5m2!1sru!2sru" width="1200" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div class="img-map">
+        <img class="map" src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+        <img class="pin" src="img/pin.svg" alt="" width="80" height="140">
+      </div>
       <div class="contacts">
         <div class="contact-info-map">
           Адрес главного офиса<br> и офлайн-магазина:
@@ -390,11 +413,10 @@
       <label for="userfield-mail" class="visually-hidden">Электронная почта</label>
       <input class="input-area" type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
       <textarea class="input-area" name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
-    </form>
-    <div class="button-container">
       <button type="submit" class="submit-btn red-button">Отправить</button>
-    </div>
+    </form>
   </section>
+  </div>
   <script src="../js/script.js"></script>
 </body>
 

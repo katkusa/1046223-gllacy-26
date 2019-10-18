@@ -634,9 +634,8 @@ img {
   margin-right: 11px;
   padding-left: 15px;
 }
-.submit-btn {
-  padding: 0;
-  width: 129px;
+.subscription-btn {
+  padding: 10px 15px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -649,6 +648,19 @@ img {
   position: relative;
   height: 430px;
 }
+.contact-block iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+  width: 100%;
+}
+.img-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
 .map {
   width: 100%;
 }
@@ -659,6 +671,7 @@ img {
 }
 .contacts {
   position: absolute;
+  z-index: 3;
   top: 65px;
   right: 90px;
   padding: 31px 25px;
@@ -873,13 +886,13 @@ img {
   font-size: 16px;
 }
 .modal input {
-  margin-bottom: 16px;
-  width: 235px;
+  margin-bottom: 18px;
+  width: 265px;
 }
 .modal textarea {
-  width: 396px;
-  height: 135px;
-  margin-bottom: 15px;
+  width: 426px;
+  height: 153px;
+  margin-bottom: 20px;
   resize: none;
 }
 .modal-close {
@@ -909,7 +922,7 @@ img {
 }
 .modal p {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   margin-right: 10px;
   padding: 0;
   font-size: 24px;
@@ -917,12 +930,13 @@ img {
   line-height: 28px;
   color: #323232;
 }
-.modal .button-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.button-container .submit-btn {
-  padding: 10px 16px;
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 /*---Catalog HEADER---*/
@@ -1301,18 +1315,11 @@ img {
   padding: 0;
   list-style: none;
 }
-.catalog-list-hit {
-  margin-left: 0;
-  margin-right: 0;
-}
 .catalog-item {
   position: relative;
   width: 267px;
   padding: 6px 9px 0;
   margin-bottom: 35px;
-}
-.catalog-item-hit {
-  padding: 0;
 }
 .action:hover {
   position: relative;

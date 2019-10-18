@@ -1,10 +1,10 @@
-var link = document.querySelector(".user-info");
-var popup = document.querySelector(".modal");
-var close = popup.querySelector(".modal-close");
-var form = popup.querySelector(".userfield-form");
-var username = popup.querySelector("[name=username]");
-var email = popup.querySelector("[name=user-mail]");
-var message = popup.querySelector("[name=user-message]");
+let link = document.querySelector(".user-info");
+let popup = document.querySelector(".modal");
+let close = popup.querySelector(".modal-close");
+let form = popup.querySelector("[name=userfield-form]");
+let username = popup.querySelector("[name=username]");
+let email = popup.querySelector("[name=user-mail]");
+let message = popup.querySelector("[name=user-message]");
 
 
 link.addEventListener("click", function (evt) {
@@ -20,6 +20,8 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   if (!username.value || !email.value || !message.value) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   }
 });
