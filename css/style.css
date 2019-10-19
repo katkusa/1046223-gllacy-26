@@ -532,6 +532,7 @@ img {
   padding-top: 16px;
 }
 .shop-list::before {
+  display: block;
   flex-shrink: 0;
   margin-right: 10px;
   content: '';
@@ -716,6 +717,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 }
 /*---Footer SOCIAL-MEDIA---*/
 .socialmedia-list {
@@ -867,6 +869,7 @@ img {
 .modal {
   position: fixed;
   display: none;
+  z-index: 50;
   top: 120px;
   left: 50%;
   width: 430px;
@@ -1226,6 +1229,9 @@ img {
   border: 3px solid rgba(255,255,255, 0.8);
   border-radius: 50%;
 }
+ .input-radio:disabled ~ span {
+  color: rgba(255,255,255, 0.4);
+}
 .input-radio:hover + .radio-indicator,
 .input-radio:focus + .radio-indicator {
   border: 3px solid rgba(255,255,255);
@@ -1273,6 +1279,9 @@ img {
   margin-right: 5px;
   border: 2px solid rgba(255,255,255, 0.8);
   border-radius: 5px;
+}
+.input-checkbox:disabled ~ span {
+  color: rgba(255,255,255, 0.4)
 }
 .input-checkbox:hover + .checkbox-indicator,
 .input-checkbox:focus + .checkbox-indicator {
