@@ -522,7 +522,7 @@ img {
 }
 .shop-description {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -545,7 +545,8 @@ img {
 }
 .shop-list p {
   margin: 0;
-  padding-top: 16px;
+  padding-top: 14px;
+  min-height: 73px;
 }
 .shop-list::before {
   display: block;
@@ -898,7 +899,7 @@ img {
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4); 
+  background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
   position: fixed;
@@ -913,6 +914,8 @@ img {
 }
 .modal-show {
   display: block;
+}
+.modal-show-animation {
   animation: bounce 0.6s;
 }
 .modal-error {
@@ -1361,6 +1364,9 @@ img {
 }
 
 /*---Catalog item---*/
+.catalog-style {
+  position: relative;
+}
 .catalog-list {
   display: flex;
   justify-content: space-between;
@@ -1380,6 +1386,9 @@ img {
 .action:hover {
   position: relative;
 }
+.action:hover .catalog-style {
+  z-index: 3;
+}
 .action:hover .actions {
   display: flex;
 }
@@ -1393,7 +1402,7 @@ img {
   align-items: center;
   height: calc(100% + 77px);
   width: 285px;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 10px;
@@ -1421,7 +1430,7 @@ img {
 }
 .icecream-price {
   position: absolute;
-  top: 215px;
+  top: 209px;
   margin: 0;
   font-size: 45px;
   font-weight: 700;
@@ -1430,8 +1439,9 @@ img {
 }
 .icecream-name {
   min-height: 46px;
+  width: 258px;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 6px;
   text-align: center;
 }
 .icecream-heading {
@@ -1460,7 +1470,7 @@ img {
   justify-content: flex-end;
   align-items: center;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 47px;
   margin-bottom: 19px;
   padding: 0;
   padding-bottom: 30px;
@@ -1470,7 +1480,7 @@ img {
   display: flex;
   margin: 0;
   margin-right: 20px;
-  margin-left: 15px;
+  margin-left: 18px;
   padding: 0;
   list-style: none;
 }
