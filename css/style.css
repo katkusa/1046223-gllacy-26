@@ -1416,10 +1416,6 @@ img {
   font-weight: 700;
   padding: 10px 17px;
 }
-.icecream-img {
-  position: relative;
-  margin: 0;
-}
 .hit::before {
   position: absolute;
   width: 61px;
