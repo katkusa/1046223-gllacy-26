@@ -1416,6 +1416,9 @@ img {
   font-weight: 700;
   padding: 10px 17px;
 }
+.hit {
+  margin: 0;
+}
 .hit::before {
   position: absolute;
   width: 61px;
