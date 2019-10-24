@@ -11,9 +11,6 @@ body {
 a {
   text-decoration: none;
 }
-button {
-  cursor: pointer;
-}
 img {
   max-width: 100%;
   height: auto;
@@ -24,7 +21,6 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-
 .background-wrapper {
   background-color: #849d8f;
 }
@@ -67,6 +63,7 @@ img {
   line-height: 16px;
   color: #ffffff;
   fill: #ffffff;
+  cursor: pointer;
 
   border: none;
   border-radius: 20px;
@@ -84,6 +81,7 @@ img {
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 50px;
   border: none;
+  cursor: pointer;
 }
 .red-button:hover,
 .red-button:focus {
@@ -94,7 +92,30 @@ img {
   box-shadow: inset 0 2px 2px 0 #942718;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
 }
-
+.white-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  background-color: rgba(255,255,255, 0.2);
+  cursor: pointer;
+}
+.white-button:hover,
+.white-button:focus {
+  color: #323232;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.white-button:active {
+  color: #323232;
+  border: transparent;
+  border-radius: 20px;
+  box-shadow: inset 0 2px 1px 0 #696969;
+  background-color: #ededed;
+}
 /*----LINK----*/
 
 .menu-link {
@@ -103,6 +124,7 @@ img {
   color: #ffffff;
   -webkit-text-decoration: underline rgba(255,255,255, 0.2);
   text-decoration: underline rgba(255,255,255, 0.2);
+  cursor: pointer;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -118,6 +140,7 @@ img {
 }
 .white-link {
   color: #ffffff;
+  cursor: pointer;
 }
 .white-link:hover,
 .white-link:focus,
@@ -126,6 +149,7 @@ img {
 }
 .black-link {
   color: #323232;
+  cursor: pointer;
 }
 .black-link:hover,
 .black-link:focus,
@@ -448,9 +472,9 @@ img {
 .give-link {
   display: inline-block;
   padding: 12px 44px;
-  font-size: 31px;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 41px;
+  line-height: 44px;
   vertical-align: top;
   text-align: center;
   text-decoration: none;
@@ -662,7 +686,7 @@ img {
 /*----Main MAP---*/
 .contact-block {
   margin-bottom: 18px;
-  display: flex;
+  display: block;
   position: relative;
   height: 430px;
 }
@@ -684,14 +708,18 @@ img {
 }
 .pin {
   position: absolute;
-  top: 140px;
-  left: 310px;
+  top: 120px;
+  left: 280px;
+}
+.contacts-wrapper {
+  padding: 0;
+  position: relative;
 }
 .contacts {
   position: absolute;
   z-index: 3;
-  top: 65px;
-  right: 90px;
+  top: -370px;
+  right: 0;
   padding: 26px 27px;
   padding-bottom: 40px;
   width: 252px;
@@ -972,7 +1000,7 @@ img {
 .submit-btn {
   display: block;
   margin-left: auto;
-  padding: 10px 20px;
+  padding: 10px 23px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1012,14 +1040,21 @@ img {
 }
 .basket-goods td {
   padding-bottom: 16px;
-  padding-right: 13px;
+  padding-right: 16px;
+}
+.basket-goods td:first-child {
+  padding-right: 20px;
+}
+.basket-goods td:nth-child(2n) {
+  padding-right: 12px;
 }
 .basket-goods td:nth-child(3n) {
   width: 220px;
-  padding-right: 30px;
+  padding-right: 21px;
 }
 .basket-goods td:nth-child(4n) {
-  padding-right: 22px;
+  padding-bottom: 25px;
+  padding-right: 26px;
 }
 .basket-goods span {
   color: #999999;
@@ -1054,14 +1089,17 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 5px;
 }
 .basket-container p {
+  margin-top: 14px;
+  margin-bottom: 13px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
 }
 .basket-container a {
-  padding: 10px 15px;
+  padding: 9px 15px;
 }
 .basket-popup:hover .basket-full-block {
   display: block;
@@ -1117,29 +1155,6 @@ img {
   border: transparent;
   border-radius: 50px;
   background-color: rgba(255,255,255, 0.2)
-}
-.white-button {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 50px;
-  background-color: rgba(255,255,255, 0.2)
-}
-.white-button:hover,
-.white-button:focus {
-  color: #323232;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  background-color: #ffffff;
-}
-.white-button:active {
-  color: #323232;
-  border: transparent;
-  border-radius: 20px;
-  box-shadow: inset 0 2px 1px 0 #696969;
-  background-color: #ededed;
 }
 .option-form {
   margin: 0;
@@ -1414,7 +1429,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 10px 17px;
+  padding: 12px 17px;
 }
 .hit {
   margin: 0;
@@ -1479,7 +1494,6 @@ img {
   display: flex;
   margin: 0;
   margin-right: 20px;
-  margin-left: 18px;
   padding: 0;
   list-style: none;
 }
@@ -1498,7 +1512,12 @@ img {
   border: transparent;
   flex-shrink: 0;
 }
+.paginator-center {
+  display: block;
+  padding: 4px;
+}
 .prev {
+  margin-right: 15px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   transform: rotate(180deg);
@@ -1511,11 +1530,12 @@ img {
 .page-item a {
   width: 27px;
   height: 26px;
-  line-height: 26px;
+  line-height: 18px;
   text-align: center;
   color: #ffffff;
 }
 .active a {
+  margin-right: 5px;
   color: #000000;
   background-color: #ffffff;
   border-radius: 50%;
@@ -1532,3 +1552,4 @@ img {
   border-radius: 50%;
   cursor: default;
 }
+

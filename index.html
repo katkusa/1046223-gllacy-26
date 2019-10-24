@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>Магазин мороженного "Gllacy Shop"</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -324,21 +324,23 @@
           <img class="map" src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
           <img class="pin" src="img/pin.svg" alt="" width="80" height="140">
         </div>
-        <div class="contacts">
-          <div class="contact-info-map">
-            Адрес главного офиса<br> и офлайн-магазина:
-            <span class="address">ул. Большая Конюшенная  19/8, Санкт-Петербург</span>
-            Для заказов по телефону:
-            <span class="tel-number">
-              <a href="tel:88124502525">
-                8 812 450-25-25
-              </a>
-            </span>
-            (с 10 до 20 ежедневно)
+        <div class="wrapper contacts-wrapper">
+          <div class="contacts">
+            <div class="contact-info-map">
+              Адрес главного офиса<br> и офлайн-магазина:
+              <span class="address">ул. Большая Конюшенная  19/8, Санкт-Петербург</span>
+              Для заказов по телефону:
+              <span class="tel-number">
+                <a href="tel:88124502525">
+                  8 812 450-25-25
+                </a>
+              </span>
+              (с 10 до 20 ежедневно)
+            </div>
+            <a class="user-info red-button" href="#">
+              Форма обратной связи
+            </a>
           </div>
-          <a class="user-info red-button" href="#">
-            Форма обратной связи
-          </a>
         </div>
       </section>
     </main>
@@ -414,16 +416,16 @@
         <p>Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
           <label for="userfield-id" class="visually-hidden">Ваше имя</label>
-          <input class="input-area" type="text" name="username" id="userfield-id" placeholder="Как вас зовут?" required>
+          <input class="input-area" type="text" name="username" id="userfield-id" placeholder="Как вас зовут?">
           <label for="userfield-mail" class="visually-hidden">Электронная почта</label>
-          <input class="input-area" type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?" required>
-          <textarea class="input-area" name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения" required></textarea>
+          <input class="input-area" type="email" name="user-mail" id="userfield-mail" placeholder="Ваша почта для ответа?">
+          <textarea class="input-area" name="user-message" id="userfield-message" rows="5" placeholder="Напишите что-нибудь..." aria-label="Поле для сообщения"></textarea>
           <button type="submit" class="submit-btn red-button">Отправить</button>
         </form>
       </section>
     </div>
   </div>
-  <script src="../js/script.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
